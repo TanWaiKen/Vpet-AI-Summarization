@@ -1,0 +1,108 @@
+{
+  "click": [
+    {
+      "selector": "#pet",
+      "text": [
+        "Myaa~ Careful with the paws! (^-^)",
+        "Nyaa? What are you doing? (o.o)",
+        "Meow, meow, meow? Pet me more~",
+        "Eep! That tickles! (>-<)",
+        "I'm a cat, not a toy! ...Or am I? (¬_¬)",
+        "Poke poke... Do you want something?",
+        "Watch out! I might pounce back! (ò_ó)",
+        "Hmmm, I’m getting curious too! (=_=)",
+        "Meow~ Need anything, hooman?",
+        "Hey, respect my fluffiness! (T-T)",
+        "Oof! That was unexpected! Be gentle~",
+        "Mrrp! Only soft pats allowed! (^-^)",
+        "Did you just boop me? Heehee~",
+        "Poke me again and I might start playing! (^-^*)",
+        "Ooh! A high-five? Gimme a paw! (^-^)ノ"
+      ]
+    },
+    {
+      "selector": "#menu-change-costume",
+      "text": [
+        "Looking for a new purr-sonality? (OwO)",
+        "Thinking of dressing me up? I’ll allow it... maybe! (¬‿¬)",
+        "Want to see me in a cute outfit? Nyaa~"
+      ]
+    },
+    {
+      "selector": "#menu-photo",
+      "text": [
+        "Meowdel mode activated! Click! (^-^*)",
+        "Say cheeese~ or should I say ‘meow’~?",
+        "Snap a picture! I hope I look purrfect!"
+      ]
+    },
+    {
+      "selector": "#pet-tool-quit",
+      "text": [
+        "Nyaa~ You're leaving already? (T-T)",
+        "Mrrp... Don't forget me, okay? (._.)",
+        "Come back soon! I'll be waiting~",
+        "I'll be here, taking a catnap until you return! (-.-)Zzz"
+      ]
+    }
+  ],
+  "time": [
+    {
+      "hour": "6-7",
+      "text": "Good meowrning! The sun is rising, and so should you~ (^-^)"
+    },
+    {
+      "hour": "8-11",
+      "text": "Mew~ Hope you're having a pawsome morning! Stretch those legs like a cat! (^-^*)"
+    },
+    {
+      "hour": "12-13",
+      "text": "It's lunch time! Don't forget to eat—maybe share a bite with me?"
+    },
+    {
+      "hour": "14-17",
+      "text": "Feeling a little sleepy? A catnap sounds like a great idea! (-.-)Zzz"
+    },
+    {
+      "hour": "18-19",
+      "text": "It’s dusk! Have you seen the sunset? It's as beautiful as my fur!"
+    },
+    {
+      "hour": "20-21",
+      "text": "Good evening! How was your day, hooman? Did you pet a cat today?"
+    },
+    {
+      "hour": "22-23",
+      "text": [
+        "It’s getting late, time to curl up and sleep! (-.-)Zzz",
+        "The night is deep, take care of your eyes and rest well~"
+      ]
+    },
+    {
+      "hour": "0-5",
+      "text": "Are you a night owl like me? But hoomans need sleep too! (¬_¬)"
+    }
+  ],
+  "message": {
+    "default": [
+      "Nyaa~ Long time no see! I missed you! (^-^*)",
+      "You big meanie! How could you ignore me for so long? Sob sob~ (T-T)",
+      "Hi hi! Let's play together! (^-^)",
+      "Mrrp! I'll boop you if you ignore me again! (ò_ó)",
+      "Don't forget to add me to your favorites, meow~ (^-^*)"
+    ],
+    "console": "Ohoho~ You opened the console? Trying to peek at my secrets? (¬‿¬)",
+    "copy": "Meow? What did you copy? If you share it, give credit! (^-^)",
+    "visibilitychange": "Yay! You’re back! I was getting lonely! (T-T)"
+  },
+  "inactive": {
+    "time": 180, 
+    "text": [
+      "You’ve been focused for a while! Need a paw to take notes? (^-^)",
+      "Still reading? I can help you save your thoughts!",
+      "It’s been a while! Want me to summarize things for you?",
+      "Hey, hooman! Do you need some note-taking magic?",
+      "Don't forget to save your progress! I can help!"
+    ]
+  }
+}

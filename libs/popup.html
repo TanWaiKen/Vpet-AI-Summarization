@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summarizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 300px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: none; /* Prevent resizing */
+      font-family: Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+    #summarize {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #summarize:hover {
+      background-color: #45a049;
+    }
+    #summary {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow-y: auto; /* Add scrollbar if content overflows */
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    #loader {
+      display: none;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <button id="summarize">Summarize</button>
+  <button id="extract">Extract Content</button>
+  <div id="loader" style="display: none;">Loading...</div>
+  <textarea id="content" placeholder="Extracted content will appear here..." readonly></textarea>
+  <textarea id="summary" placeholder="Summary will appear here..." readonly></textarea>
+  <button id="copy">Copy Summary</button>
+  <script src="Readability.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

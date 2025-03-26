@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- Sidebar Menu -->
+    <div id="menu-bar">
+        <button class="menu-item" id="menu-file">&#128193;</button>  <!-- 📁 -->
+        <button class="menu-item" id="menu-photo">&#128247;</button> <!-- 📷 -->
+        <button class="menu-item" id="menu-change-costume">&#9881;</button> <!-- ⚙️ -->
+        <button class="menu-item" id="menu-generate-notes">&#128221;</button> <!-- 📝 -->
+    </div>
+
+     <!-- Main Content -->
+    <div>
+
+        <div>
+            <img class="pet" id="pet" src="./img/cat-spin.gif" />
+        </div>
+
+        <!-- Message Box -->
+        <div id="message-box">
+            <p id="message-text"></p>
+        </div>
+
+    </div>
+    
+</body>
+<script src="class/pet.js"></script>
+<script src="content.js"></script>
+<style>
+    
+    body {
+        display: flex; /* Enables flexbox layout */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh;  /* Full viewport height */
+        margin: 0; /* Remove default margin */
+    }
+    
+    #pet {
+        width: 220px;
+        height: 240px;
+        cursor: pointer;
+    }
+
+    #menu-bar {
+        position: fixed;
+        margin-right: 300px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f4f4f4;
+    }
+    
+    .menu-item {
+        width: 40px;
+        height: 40px;
+        background: #f4f4f4;
+        border: none;
+        box-shadow: 0px 4px 6 px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    #send-url {
+        position: absolute; /* Stack */
+        width: 50;
+        height: auto;
+        top: calc(40% + 140px); /* Adjust based on image height */
+        padding: 10px; /* Adds space inside the button for better appearance */
+        background: #ff9800;
+        color: white;
+        border: none;  /* Removes the default button border */
+        cursor: pointer; /* Changes the cursor to a pointer on hover */
+        z-index: 9999; /* Ensures the button appears above other elements */
+    }
+
+    #message-box {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        background:linear-gradient(135deg, #ff9800, #ff5e62);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        min-width: 100px;
+        max-width: 250px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    /* Message Box Buttons */
+    .msg-btn {
+        width: 35px;
+        height: 35px;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Buttons inside Message Box */
+    .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    #generate-notes, #close-msg {
+        margin-top: 10px;
+        background: #007BFF;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #close-msg {
+        background: #ff6961;
+    }
+
+    /* Animation for showing the message box */
+    .show-message {
+        opacity: 1 !important;
+        transform: translateX(-50%) scale(1) !important;
+    }
+    
+    
+</style>
+
+</html>
