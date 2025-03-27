@@ -10,7 +10,6 @@
 2. It analyzes the webpage content and determines if notes should be generated.
 3. If an image contains text, it extracts it and processes it with NLP.
 4. If the user changes the webpage, it asks whether to save notes or clear memory.
-5. If the camera detects tiredness, it suggests taking a break.
 
 ## 📜 Manifest.json (Chrome Extension Configuration)
 - The manifest.json file is the blueprint of a Chrome extension, defining its settings, permissions, and functionality.
