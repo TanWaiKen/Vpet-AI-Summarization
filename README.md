@@ -17,3 +17,10 @@
 - "manifest_version": 3 – Uses the latest and most secure Chrome extension version.
 - "action" – Defines the popup UI (index.html).
 - "permissions" – Grants required access for content tracking and camera usage.
+<<<<<<< Updated upstream
+=======
+
+
+## Python
+1. pip install flask flask-cors transformers torch python-dotenv google-generativeai
+>>>>>>> Stashed changes
