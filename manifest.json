@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "This extension generates a vpet and tracks your browsing content in real time to generate notes.",
     "manifest_version": 3,
-    "permissions": ["scripting", "storage", "tabs", "sidePanel", "downloads"],
+    "permissions": ["scripting", "storage", "tabs", "sidePanel", "downloads", "activeTab"],
 
     "background": {
         "service_worker": "background.js"

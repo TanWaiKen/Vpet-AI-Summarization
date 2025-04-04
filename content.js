@@ -60,3 +60,19 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     return true;
   }
 });
+
+window.addEventListener("load", () => {
+  const article = new Readability(document.cloneNode(true)).parse();
+  if (article && article.textContent) {
+    chrome.runtime.sendMessage({
+      type: "summarize_content",
+      content: article.textContent
+    }, (response) => {
+      if (response?.summary) {
+        console.log("Gemini summary:", response.summary);
+      } else {
+        console.error("Gemini failed to summarize:", response?.error || "Unknown error");
+      }
+    });
+  }
+});

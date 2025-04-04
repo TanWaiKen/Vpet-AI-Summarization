@@ -40,6 +40,37 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             // Return true to indicate we'll send an async response
             return true;
 
+        case "summarize_content":
+            const API_KEY = "AIzaSyBMJZ_0i1k8Yavmr69IM7BYwXforgN-_6I"; //Gemini API Key
+
+            if (!request.content) {
+                sendResponse({ error: "No content to summarize." });
+                return;
+            }
+
+            fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" + API_KEY, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    contents: [{
+                        parts: [{
+                            text: `Analyze this webpage content and provide a concise summary in paragraph form: ${request.content}`
+                        }]
+                    }]
+                })
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const result = data.candidates?.[0]?.content?.parts?.[0]?.text || "No summary available.";
+                    sendResponse({ summary: result });
+                })
+                .catch(err => {
+                    console.error("Gemini error:", err);
+                    sendResponse({ error: "Failed to summarize content." });
+                });
+
+            return true;
+
         default:
             console.warn("Unknown request type:", request.type);
             sendResponse({ error: "Invalid request type." });
