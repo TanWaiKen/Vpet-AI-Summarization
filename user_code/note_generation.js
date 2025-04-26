@@ -59,7 +59,7 @@ async function generateNotes() {
 
 
 async function callGeminiAPI(text) {
-    const API_KEY = "AIzaSyCpcCxWOKgeiRbStxgmsGmTqwXcRm1kv1s";
+    const API_KEY = "YOUR_GEMINI_API";
     const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
     const requestBody = {
