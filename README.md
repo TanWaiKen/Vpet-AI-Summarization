@@ -1,6 +1,8 @@
 # AiPaw - Virtual Pet & Smart Notes Chrome Extension
 AiPaw is an intelligent Chrome extension that lives as a virtual pet on your browser. It helps users generate smart notes from webpages using Readability.js and Gemini API.
 
+# Documentation
+[Notion V-pet/AI Summarization](https://billowy-ketch-f64.notion.site/V-pet-AI-Web-Summarization-1b14f9177a1280ada4a1ea754461f4f0?pvs=74)
 
 # 1.0 Getting Started
 This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running, follow these simple steps.
