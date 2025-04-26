@@ -19,5 +19,5 @@ These are some of the pre-setup environment requirements needed by the project.
 ![image](https://github.com/user-attachments/assets/70380932-0203-41e8-b74e-6baad35c95e8)
 ![image](https://github.com/user-attachments/assets/98b893dd-579f-4e51-a84c-21e1bafb854e)
 
-## 2.3 Add your API
+## 2.3 Add your API in user_code/note_generation.js
 ![Screenshot 2025-04-26 165339](https://github.com/user-attachments/assets/b2fd073b-b89e-49a7-921a-b47b74800866)
