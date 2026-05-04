@@ -59,8 +59,8 @@ async function generateNotes() {
 
 
 async function callGeminiAPI(text) {
-    const API_KEY = "YOUR_GEMINI_API";
-    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+    const API_KEY = "AIzaSyBuE1Ul1suqE8UlA3FoOdGPEAV2aF6evVg";
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent`;
 
     const requestBody = {
         contents: [
@@ -78,7 +78,8 @@ async function callGeminiAPI(text) {
         const response = await fetch(endpoint, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "x-goog-api-key": API_KEY
             },
             body: JSON.stringify(requestBody)
         })
